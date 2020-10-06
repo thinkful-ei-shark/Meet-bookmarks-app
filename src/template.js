@@ -35,7 +35,7 @@ const condensedTemplate = function (bookmark) {
     let renderRatingTemplate = "";
     
     if (bookmark.rating) {
-    renderRatingTemplate = `<p>${bookmark.rating}</p>`
+    renderRatingTemplate = `<p>${bookmark.rating} star</p>`
     } else {
         renderRatingTemplate = `<p>Not rated</p>`
     }
@@ -111,7 +111,7 @@ const addBookmarkTemplate = function() {
                 <form>
                     <button id="add" type="submit" class="btn btn-primary">Add +</button>
                     <select id="filter" name="filter" class="btn btn-primary">
-                        
+                        <option value="filter">Filter by</option>
                         <option value="1-star">1 Star</option>
                         <option value="2-star">2 Star</option>
                         <option value="3-star">3 Star</option>
@@ -153,35 +153,7 @@ const addBookmarkTemplate = function() {
 }
 
 
-const editTemplate = function (bookmark) {
-    return `
-    <div class="jumbotron">
-    <form>
-        <div>
-            <label for="siteName">Website title</label>
-            <input type="text" id="siteName" value="${bookmark.title}"  required/>
-        </div>
-        <div>
-            <label for="siteURL">Website url</label>
-            <input type="text" id="siteURL" value="${bookmark.url}" required/>
-        </div>
-        <div>
-            <label for="rating">Rating</label>
-            <br>
-            <input type="text" id="rating" value="${bookmark.rating}" placeholder="How do you like the site">
-        </div>
-        <div>
-            <label for="description">Description</label>
-            <br>
-            <input type="text" id="description" value="${bookmark.desc}" placeholder="Describe the site">
-        </div>
-        <button id="edit-bookmark" type="submit" class="btn btn-primary">Submit</button>
-        <button type="submit" class="btn btn-primary">Cancel</button>
-    
-    </form>
-    </div>
-`
-}
+
 
 
 
