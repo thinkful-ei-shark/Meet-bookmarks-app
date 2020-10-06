@@ -1,0 +1,42 @@
+{
+  "name": "Bookmark-app",
+  "version": "1.0.0",
+  "description": "Project Overview Using everything you've learned over the Fundamentals section of the course, you will build the frontend for an API-powered Bookmarks application that lets the user store and rate their custom web bookmarks.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeetPatel89/Bookmark-app.git"
+  },
+  "keywords": [],
+  "author": "Meet Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeetPatel89/Bookmark-app/issues"
+  },
+  "homepage": "https://MeetPatel89.github.io/bookmarks-app",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "gh-pages": "^3.1.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.0",
+    "css-loader": "^4.3.0",
+    "exports-loader": "^1.1.0",
+    "file-loader": "^6.1.0",
+    "html-webpack-plugin": "^4.5.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^4.0.2",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.3.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
