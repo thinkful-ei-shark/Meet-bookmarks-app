@@ -3,7 +3,7 @@
 
 ## Live at
 
-https://thinkful-ei-shark.github.io/Meet-bookmarks-app/
+https://thinkful-ei-shark.github.io/meet-bookmarks-app/
 
 ## Brief Overview
 
